@@ -1,0 +1,156 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url("img/star.gif"); */
+  background-color: #fff;
+  height: 100vh;
+  margin: 0;
+  font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
+}
+
+.player {
+  /* background: radial-gradient(circle at center, #3004ae, #000); */
+  /* height: 100vh;
+  margin: 0; */
+  background: radial-gradient(
+    101.84% 77.03% at 50% 22.97%,
+    #0d0a8e 0%,
+    #000 61.23%
+  );
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+#albumArt {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#playPause,
+#prev,
+#next {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#playPause:hover,
+#prev:hover,
+#next:hover {
+  background: #0056b3;
+}
+
+#seek {
+  flex: 1;
+  cursor: pointer;
+  appearance: none;
+  height: 8px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  transition: opacity 0.2s;
+}
+
+#seek::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+
+#seek::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+#currentTime,
+#duration {
+  width: 50px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+  color: #fff;
+}
+
+#playlist li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+#playlist li.active {
+  background: #007bff;
+  color: white;
+}
+
+#playlist li:hover {
+  background: #e0e0e0;
+}
+
+/* Back to Main Page Button */
+.back-to-main {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}

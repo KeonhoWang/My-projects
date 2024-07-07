@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="back-to-main">
+      <a href="index.html" class="back-button">&larr; Back to Main Page</a>
+    </div>
+    <div class="player">
+      <img id="albumArt" src="default-art.jpg" alt="Album Art" />
+      <audio id="audio"></audio>
+      <div class="controls">
+        <button id="prev"><i class="fas fa-backward"></i></button>
+        <button id="playPause"><i class="fas fa-play"></i></button>
+        <button id="next"><i class="fas fa-forward"></i></button>
+        <input type="range" id="seek" value="0" min="0" max="100" step="1" />
+      </div>
+      <div class="time">
+        <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+      </div>
+      <ul id="playlist">
+        <!-- Songs will be dynamically added here -->
+      </ul>
+    </div>
+    <script src="music.js"></script>
+  </body>
+</html>

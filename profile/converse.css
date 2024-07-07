@@ -1,0 +1,279 @@
+/* Global Styles */
+body {
+  font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+
+.product-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 1000px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-info {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.shipping {
+  font-size: 12px;
+  color: #777;
+}
+
+.sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.product-description {
+  margin: 15px 0;
+}
+
+.more-info {
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.more-info:hover {
+  text-decoration: underline;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.color {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.color-black {
+  background-color: #000;
+}
+.color-blue {
+  background-color: #2f6ee2;
+}
+.color-pink {
+  background-color: #ff69b4;
+}
+.color-yellow {
+  background-color: #f0bf1e;
+}
+.color-green {
+  background-color: #90cc20;
+}
+.color-purple {
+  background-color: #a020f0;
+}
+
+.product-details {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.details-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+.add-cart {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 18px 20px;
+  font-size: 18px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.add-cart:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* Reviews Section */
+.reviews {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.review {
+  margin-bottom: 20px;
+}
+
+.review p {
+  margin-bottom: 5px;
+}
+
+.rating {
+  color: #ffd700;
+  font-size: 16px;
+}
+
+/* Add New Review */
+.add-review {
+  margin-top: 20px;
+}
+
+.add-review h4 {
+  margin-bottom: 10px;
+}
+
+.add-review form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-review textarea {
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.submit-review {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 18px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  /* text-transform: uppercase; */
+  font-size: 18px;
+}
+
+.submit-review:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+#review-text {
+  font-size: 12px;
+}
+
+/* Back to Main Page Button */
+.back-to-main {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* Related Products Section */
+.related-products {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.related-products h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.related-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between; /* Adjusted spacing */
+}
+
+.related-product {
+  text-align: center;
+  flex: 1; /* Added flex property */
+  max-width: 30%; /* Added max-width for responsiveness */
+  padding: 10px; /* Added padding for spacing */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.related-product img {
+  width: 100%; /* Ensures image fills its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 4px;
+}
